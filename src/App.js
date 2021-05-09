@@ -9,7 +9,7 @@ import SingleJob from './components/SingleJob';
 export default function App() {
     const [jobs, setJobs] = useState([]);
     const FetchJobs = async () => {
-        const resp = await axios.get("http://localhost:5000");
+        const resp = await axios.get("https://still-ravine-98260.herokuapp.com/");
         setJobs(resp.data);
     }
     useEffect(() => {
